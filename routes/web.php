@@ -25,8 +25,8 @@ Route::get( '/hello' , [SayHelloController::class, 'index']);
 Route::get( '/about' , [SayHelloController::class, 'about']);
 Route::get( '/service' , [SayHelloController::class, 'service']);
 
-Route::get('entercredentials' , [SendMailController::class ,'enterDetails']);
-Route::post('entercredentials' , [SendMailController::class ,'store']);
+Route::get('entercredentials' , [SendMailController::class ,'create']);
+Route::post('entercredentials' , [SendMailController::class ,'sendEmail'])->name('send.email');
 
 Route::get('/sendemail',function (){
     return view('sendemail');

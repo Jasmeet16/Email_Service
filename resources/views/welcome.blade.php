@@ -10,7 +10,7 @@
     <h1>Select tool</h1>
 
     <a href="/entercredentials">Click here to use google smtp</a>
-    {{-- <a href="/service"> service</a> --}}
+   
  
 </body>
 </html>
